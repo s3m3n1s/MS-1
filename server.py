@@ -49,11 +49,12 @@ def create_figure(a, b, c):
     if not a: a = 0
     if not b: b = 0
     if not c: c = 0
-    y = float(a)*x**2 + float(b)*x + float(c)
+    y = float(a) * x ** 2 + float(b) * x + float(c)
     axis = fig.add_subplot(1, 1, 1)
     axis.grid(True, which='both')
     axis.plot(x, y)
     return fig
 
 
-app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
