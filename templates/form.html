@@ -1,0 +1,12 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+  <div class="container">
+  <h1>Расчёт квадратного уравнения</h1>
+  <p>Введите коэффиценты!</p>
+<hr>
+{{ wtf.quick_form(form) }}
+<hr>
+<p>Copyright 2023 Сайдумаров Семен Кириллович</p>
+</div>
+{% endblock %}

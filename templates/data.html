@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+  <div class="container">
+  <h1>Результат!</h1>
+      <h2>Ответ</h2>
+      <h3>{{data.Ответ}}</h3>
+<!--        <hr>-->
+<!--        {% for key,value in data.items() %}-->
+<!--        <h2> {{key}}</h2>-->
+<!--        <p> {{value}}</p>-->
+<!--        {% endfor %}-->
+<!--<hr>-->
+<img src="/plot.png?a={{data.a}}&b={{data.b}}&c={{data.c}}" alt="График">
+<p>Copyright 2023 Сайдумаров Семен Кириллович</p>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+flask
+flask-wtf
+flask_bootstrap
+matplotlib
+numpy
