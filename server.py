@@ -16,6 +16,7 @@ Bootstrap(app)
 
 @app.route('/', methods=['POST', 'GET'])
 def get_vars():
+    """Возрашает отрисованный интерфейс"""
     form = MainForm()
     if request.method == 'POST' and form.validate():
         print(request.form)
@@ -31,6 +32,7 @@ def get_vars():
 
 @app.route('/plot.png')
 def plot_png():
+    """Возвращает картинку"""
     a = request.args.get('a')
     b = request.args.get('b')
     c = request.args.get('c')
@@ -41,6 +43,7 @@ def plot_png():
 
 
 def create_figure(a, b, c):
+    """Создаёт картинку (график)"""
     fig = Figure()
     x = np.linspace(-5, 5, 1000)
     if not a: a = 0
