@@ -28,6 +28,15 @@ class SolverTestSamples(unittest.TestCase):
     def test_2(self):
         self.assertAlmostEqual([1, 0.4], calculate(5, -7, 2), places=6)
 
+    def test_3(self):
+        self.assertAlmostEqual([], calculate(0, 0, 1), places=6)
+
+    def test4(self):
+        self.assertAlmostEqual([-1], calculate(0, 1, 1), places=6)
+
+    def test5(self):
+        self.assertAlmostEqual([], calculate(1, 1, 1), places=6)
+
 
 if __name__ == "__main__":
     unittest.main()
