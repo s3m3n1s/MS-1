@@ -3,4 +3,3 @@ flask-wtf
 flask_bootstrap
 matplotlib
 numpy
-requests
