@@ -10,4 +10,4 @@ Ubuntu linux 22.04 ИЛИ Manjaro (Тестировал на 5.10.178-1-MANJARO)
 ## Запуск
 ```docker compose up -d```
 ## Тестирование
-В процессе...
+Запустить unit-тесты из папки tests
