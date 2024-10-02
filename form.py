@@ -15,4 +15,5 @@ class MainForm(FlaskForm):
     a = FloatField('a')
     b = FloatField('b')
     c = FloatField('c')
+    d = FloatField('d')
     submit = SubmitField('Calculate')
